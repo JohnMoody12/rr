@@ -4,6 +4,8 @@ import { useRef } from "react";
 export const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
   const handleChange = (e) => {
     setNewItem(e.target.value);
+    console.log(e.target.name);
+    console.log(e.target.value);
   };
 
   const inputRef = useRef();
